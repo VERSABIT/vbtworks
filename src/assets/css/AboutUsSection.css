@@ -1,0 +1,72 @@
+/* aboutContainer styling */
+.aboutcontainer {
+    padding: 2rem; /* Equivalent to p-5 */
+    background-color: #ffffff; /* Equivalent to bg-gray-100 */
+  }
+  
+  /* Heading 2xl styling */
+  .aboutheading-2xl {
+    font-size: 2rem; /* Equivalent to text-3xl */
+    text-align: center;
+    font-weight: bold; /* Equivalent to font-bold */
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+  }
+  
+  /* aboutParagraph styling */
+  .aboutparagraph {
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+    text-align: center;
+    font-size: 1rem; /* Equivalent to text-base */
+    color: #4b5563; /* Equivalent to text-gray-700 */
+  }
+  
+  /* Heading 3xl styling */
+  .heading-3xl {
+    font-size: 1.875rem; /* Equivalent to text-2xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+  }
+  
+  /* Team grid styling */
+  .about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1.25rem; /* Equivalent to gap-5 */
+  }
+  
+  /* Team member card styling */
+  .about-team-member-card {
+    background-color: #ffffff; /* Equivalent to bg-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    padding: 1.25rem; /* Equivalent to p-5 */
+  }
+  
+  /* Team member image styling */
+  .about-team-member-image {
+    width: 100%; /* Full width */
+    height: auto; /* Fixed height */ 
+    object-fit: cover; /* Cover the area */
+    border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+  }
+  
+  /* Team member name styling */
+  .about-team-member-name {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-top: 0.75rem; /* Equivalent to mt-3 */
+  }
+  
+  /* Team member position styling */
+  .about-team-member-position {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #6b7280; /* Equivalent to text-gray-600 */
+  }
+  
+  /* Team member description styling */
+  .about-team-member-description {
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+    font-size: 1rem; /* Equivalent to text-base */
+    color: #6b7280; /* Equivalent to text-gray-600 */
+  }
+  

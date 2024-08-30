@@ -1,0 +1,177 @@
+.exploreservice-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  background-color: #ffffff;
+}
+
+.exploresection {
+  max-width: 1140px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.exploresection-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.exploretitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.exploredescription {
+  font-size: 1.6rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.exploreservice-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.exploreservice-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 37.5rem;
+  max-width: 12.5rem; /* Control the maximum width */
+  height: 6.25rem; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide any overflow content */
+  position: relative; /* Relative position for absolute child elements */
+}
+
+.exploreservice-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.exploreservice-image {
+  width: 100%;
+  height: 100%; /* Ensure image covers the card height */
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute; /* Position image absolutely within the card */
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease; /* Smooth zoom-out effect */
+  transform: scale(1.1); /* Slight zoom-out effect */
+}
+
+.exploreservice-card:hover .exploreservice-image {
+  opacity: 0.3; /* Slightly fade out the image on hover */
+  transform: scale(1); /* Reset zoom on hover */
+}
+
+.exploreservice-content {
+  position: absolute; /* Position content absolutely within the card */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #fff; /* Text color for visibility on image */
+}
+
+.exploreservice-card:hover .exploreservice-content {
+  opacity: 1; /* Show the content on hover */
+}
+
+.exploreservice-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  position: absolute; /* Position title absolutely within the card */
+  top: 10px; /* Position at the top of the card */
+  left: 0;
+  right: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for readability */
+  color: #fff;
+  padding: 0.5rem;
+}
+.exploreservice-card:hover .exploreservice-title {
+  opacity: 0; /* Hide title on hover */
+}
+
+.exploreservice-description {
+  font-size: 1.2rem;
+  color: #666;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.exploreservice-card:hover .exploreservice-description {
+  opacity: 1; /* Show description on hover */
+}
+
+.explorebutton-container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically (optional) */
+  margin-top: 3rem;
+  flex-wrap: wrap; /* Allow wrapping of items if necessary */
+  gap: 1rem; /* Add spacing between buttons */
+}
+
+@media (max-width: 768px) {
+  .explorebutton-container {
+    justify-content: space-between; /* Space items evenly */
+    flex-direction: row; /* Display items in a row */
+  }
+}
+
+.expertiseicon {
+  font-size: 0.9rem;
+}
+
+.explorebtn {
+  display: inline-flex; /* Make the button an inline-flex container */
+  align-items: center; /* Align items vertically centered */
+  background-color: #fff; /* White background */
+  color: #379eff; /* Blue text color */
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 1rem; /* Medium border-radius */
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  gap: 0.5rem; /* Space between text and icon */
+}
+
+.explorebtn:hover {
+  color: #007bff; /* Blue text color on hover */
+  border-color: #007bff; /* Blue border color on hover */
+}

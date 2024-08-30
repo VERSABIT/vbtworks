@@ -1,0 +1,181 @@
+/* expertiseSection Styling */
+.expertisesection {
+  padding-top: 3rem; /* py-12 */
+  padding-bottom: 3rem; /* py-12 */
+  background-color: #002770; /* bg-slate-900 */
+}
+
+ 
+
+.expertisesection.dark {
+  background-color: #002770; /* dark:bg-black */
+}
+
+/* expertiseContainer Styling */
+.expertisecontainer {
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+}
+
+
+.expertisecontainer.max-w-7xl {
+  max-width: 80rem; /* max-w-7xl */
+}
+
+/* Grid Styling */
+.expertisegrid {
+  display: grid; /* grid */
+  grid-template-columns: 1fr; /* grid-cols-1 */ 
+}
+
+@media (min-width: 1024px) {
+  .expertisegrid {
+    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */ 
+  }
+}
+
+
+/* Title and Description Styling */
+.expertisetitle-primary {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800; /* font-extrabold */
+  color: rgba(255, 255, 255, 0.9); /* text-white/90 */
+}
+
+
+.expertisetitle-primary.dark {
+  color: #ffffff; /* dark:text-white */
+}
+
+.expertisedesc {
+  margin-top: 2rem; /* mt-8 */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 400; /* font-normal */
+  line-height: 2rem; /* leading-8 */
+  color: rgba(255, 255, 255, 0.7); /* text-white/70 */
+}
+
+
+/* Button Styling */
+.expertisebtn-primary {
+  display: inline-flex; /* inline-flex */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  color: #263246; 
+  background-color: #ffffff; /* bg-white */ 
+  border: 1px solid transparent; /* border */
+  padding: 0.5rem 1.5rem; /* py-2 xl:py-3 px-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 1.2rem; /* text-sm */
+  transition: background-color 0.5s; /* transition-colors duration-500 */
+}
+
+.expertisebtn-primary:hover {
+  background-color: #BAE4FF; /* hover:bg-slate-100 */
+}
+
+
+/* Icon Styling */
+.expertiseicon {
+  margin-right: 0.5rem; /* mr-2 */
+  font-size: 1rem; /* text-base */
+  color: #0ea5e9; /* text-sky-500 */
+}
+
+.expertiseicon.dark {
+  color: #0ea5e9; /* dark:text-white */
+}
+
+/* Card Styling */
+.expertisecard { 
+  min-width: 200px; /* Adjust as needed */
+  min-height: 200px; /* Adjust as needed */
+  padding: 1rem;
+  margin: 0.5rem;
+  overflow: hidden; /* overflow-hidden */
+  opacity: 1;
+  transform: none;
+  height: 100%; /* h-full */
+  transition: all 0.2s; /* transition-all duration-200 */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* border-black/10 */
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+.expertisecard:hover {
+  background-color: #1b2946; /* hover:bg-slate-950 */
+}
+.expertisecustom-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem; /* 5 * 0.25rem from Tailwind's gap-5 */
+
+  /* Responsive breakpoints */
+}
+
+@media (min-width: 640px) { /* sm */
+  .expertisecustom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .expertisecustom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .expertisecustom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .expertisecustom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Secondary Title and Description Styling */
+.expertisetitle-secondary {
+  margin-top: 0.75rem; /* mt-3 */
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 400; /* font-normal */
+  color: rgba(255, 255, 255, 0.9); /* text-white/90 */
+}
+
+.expertisetitle-secondary.dark {
+  color: #fff; /* dark:text-white */
+}
+
+.expertisedesc {
+  margin-top: 1rem; /* mt-4 */
+  font-size: 1rem; /* text-base */
+  font-weight: 400; /* font-normal */
+  color: rgba(255, 255, 255, 0.7); /* text-white/70 */
+}
+
+.expertisedesc.dark {
+  color: rgba(255, 255, 255, 0.6); /* dark:text-white/60 */
+}
+
+/* Additional Styling */
+.expertisespace-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
