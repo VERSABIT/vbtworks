@@ -1,0 +1,115 @@
+.servicetransform-section {
+  padding: 2.5rem 0;
+  background-color: #ddecfa; /* Light Slate Gray */
+  color: #1f2937; /* Dark Slate Gray */
+}
+
+.servicetransform-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .servicetransform-container {
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    align-items: center;
+  }
+}
+
+.servicetransform-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.servicetransform-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.servicetransform-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1f2937; /* Dark Slate Gray */
+}
+
+.servicetransform-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4b5563; /* Slate Gray */
+}
+
+.servicetransform-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .servicetransform-features {
+    grid-template-columns: 1fr 1fr; /* Two-column layout for features */
+  }
+}
+
+.servicetransform-feature {
+  display: flex;
+  align-items: center;
+}
+
+.servicetransform-feature-icon {
+  color: #0ea5e9; /* Sky Blue */
+  font-size: 1rem; /* Adjust icon size */
+  margin-right: 0.75rem; /* Space between icon and text */
+}
+
+.servicetransform-feature-text {
+  color: #111827; /* Very Dark Gray */
+  font-size: 1rem; /* Ensure text size matches icon */
+}
+
+.servicetransform-button {
+  display: inline-flex; /* Ensures the button doesn’t stretch */
+  align-items: center;
+  justify-content: center;
+  background-color: #2E9AFF; /* Sky Blue */
+  color: #ffffff; /* White */
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light Gray Border */
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  /* Optional: Align the button to the left */
+  margin-right: auto; /* Pushes the button to the left within a flex container */
+}
+
+
+.servicetransform-button:hover {
+  background-color: #38bdf8; /* Sky Blue Darker */
+}
+
+.servicetransform-button-icon {
+  font-size: 1rem; /* Adjust icon size */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.servicetransform-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicetransform-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1); /* Black with 10% opacity */
+}

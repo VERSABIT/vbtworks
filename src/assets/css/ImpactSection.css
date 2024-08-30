@@ -1,0 +1,102 @@
+/* ImpactSection.css */
+
+/* General Section Styles */
+.impact-section {
+  padding: 3rem 0; /* py-12 */
+  background-color: #ffffff;
+  color: #2d3748; /* text-slate-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .impact-section {
+    background-color: #ffffff; /* dark:bg-slate-800 */
+    color: #0f172a; /* dark:text-white/90 */
+  }
+}
+
+.impactcontainer {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1.5rem; /* px-4 */
+}
+
+@media (min-width: 640px) {
+  .impactcontainer {
+    padding: 0 2rem; /* sm:px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .impactcontainer {
+    padding: 0 2rem; /* lg:px-8 */
+  }
+}
+
+.impacttext-center {
+  text-align: center;
+}
+
+.impacttitle-primary {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800; /* font-extrabold */
+}
+
+.impactdesc {
+  margin-top: 2rem; /* mt-8 */
+  font-size: 1rem; /* text-base */
+  font-weight: 400; /* font-normal */
+}
+
+.impactgrid {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+  margin-top: 2rem; /* mt-8 */
+}
+
+@media (min-width: 768px) {
+  .impactgrid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    gap: 3rem; /* md:gap-x-12 */
+  }
+}
+
+.impactcard {
+  opacity: 1;
+  transform: none;
+}
+
+.impactcard-content {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db; /* border-black/10 */
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 1.5rem; /* p-6 */
+}
+
+@media (min-width: 1024px) {
+  .impactcard-content {
+    padding: 2.5rem; /* lg:py-10 lg:px-9 */
+  }
+}
+
+.impacticon {
+  font-size: 1.875rem; /* text-3xl */
+  color: #2d3748; /* text-slate-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .impacticon {
+    color: #0f172a; /* dark:text-white */
+  }
+}
+
+.impactstat {
+  margin-top: 6rem; /* mt-24 */
+  font-size: 3rem; /* text-5xl */
+  font-weight: 700; /* font-bold */
+}
+
+.impactlabel {
+  margin-top: 1rem; /* mt-4 */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+}

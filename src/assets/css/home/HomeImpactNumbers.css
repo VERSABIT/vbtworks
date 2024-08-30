@@ -1,0 +1,71 @@
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.25rem; /* 20px */
+  background-color: #e8f7ff; /* Light blue background */
+  padding: 2rem; /* 32px */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: start; /* Center text alignment */
+}
+
+.container-customnumbers {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem; /* 16px */
+  background-color: #002770; /* Dark blue background */
+  padding: 2rem; /* 32px */
+  text-align: center; /* Center text alignment */
+}
+
+
+@media(min-width: 1024px){
+  .highlight-card {
+    transform: translateY(-2rem); /* Moves the card up by 10px */
+    margin-bottom: -3rem; /* Counteracts the upward movement to level the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+}
+ 
+
+.homeimpact-header {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.homeimpact-title {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  color: #0f172a;
+  text-align: start;
+}
+
+.homeimpact-desc {
+  font-size: 1.125rem; /* 18px */
+  color: #4a5568;
+  margin-top: 1rem;
+  text-align: start;
+}
+
+.text-content {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8rem;
+  text-align: justify;
+}
+
+.homeimpact-stat-title {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  color: #2d3748;
+  text-align: justify;
+}
+
+.homeimpact-stat-text {
+  font-size: 1rem; /* 16px */
+  line-height: 1.75rem; /* 28px */
+  color: #4a5568;
+  margin-top: 0.5rem;
+  text-align: justify;
+}

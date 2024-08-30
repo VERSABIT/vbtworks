@@ -1,0 +1,388 @@
+/* Root variables for easy color and size management */
+:root {
+  --primary-font: "YourPrimaryFont", sans-serif; /* Replace with your primary font */
+  --text-slate-900: #1e293b; /* Replace with your text color */
+  --text-white-600: #ffffff; /* Replace with your text color */
+  --text-gray-700: #374151; /* Replace with your text color */
+  --btn-primary: #007bff; /* Button primary color */
+  --btn-primary-hover: #0056b3; /* Button hover color */
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Main section styling */
+.main-section {
+  background-color: #e8f7ff;
+  padding: 0 1rem; /* Adjusted for mobile */
+  height: auto;
+  border-bottom-left-radius: 7.5rem;
+}
+
+/* Landing grid container styling */
+.landinggrid-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem; /* Adjusted for mobile */
+}
+
+/* Landing content container styling */
+.landingcontent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Adjusted for consistency */
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .landingcontent-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem; /* Adjusted for spacing */
+  }
+}
+
+/* Landing text container styling */
+.landingtext-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Adjusted for consistency */
+  padding: 2rem 1rem; /* Adjusted for mobile */
+}
+
+@media (min-width: 768px) {
+  .landingtext-container {
+    padding: 4rem; /* Restore padding for larger screens */
+  }
+}
+
+.landingtext-container h2 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 2rem; /* Adjusted for mobile */
+  color: var(--text-slate-900);
+}
+
+@media (min-width: 768px) {
+  .landingtext-container h2 {
+    font-size: 2.5rem; /* Larger font size for larger screens */
+  }
+}
+
+.landingtext-container p {
+  background-color: #e8f7ff;
+  font-size: 0.875rem; /* Adjusted for mobile */
+}
+
+@media (min-width: 768px) {
+  .landingtext-container p {
+    font-size: 1rem; /* Larger font size for larger screens */
+  }
+}
+
+/* Landing buttons container styling */
+.landingbuttons-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column */
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .landingbuttons-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 items per row for max-width of 768px */
+    gap: 1rem; /* Adjust gap as needed */
+    justify-content: space-between; /* Spread items evenly */
+  }
+}
+@media (min-width: 768px) {
+  .landingbuttons-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 3 items per row for min-width of 768px */
+  }
+}
+/* Styling for individual buttons */
+.landingbtn-primary,
+.landingbtn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem; /* Adjust padding as needed */
+  border-radius: 1.5rem; /* Add border radius */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Specific styles for primary button */
+.landingbtn-primary {
+  background-color: #3b82f6;
+  color: var(--text-white-600);
+  border: 4px solid #3b82f6;
+}
+
+.landingbtn-primary:hover {
+  background-color: #bfdbfe;
+}
+
+/* Specific styles for secondary button */
+.landingbtn-secondary {
+  background-color: transparent;
+  color: #3b82f6;
+}
+
+.landingbtn-secondary:hover {
+  font-size: 1.25rem; /* Increase font size on hover */
+}
+
+/* Landing stats container styling */
+.landingstats-container {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--text-gray-700);
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .landingstats-container {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 items per row for min-width of 768px */
+    justify-content: space-between; /* Spread items evenly on larger screens */
+  }
+}
+@media (max-width: 768px) {
+  .landingstats-container {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 items per row for max-width of 768px */
+    gap: 1rem; /* Adjust gap as needed */
+    justify-content: space-between;
+  }
+  .landingbtn-primary,
+  .landingbtn-secondary {
+    display: flex;
+    font-size: 0.7rem;
+  }
+}
+
+/* Landing stat item styling */
+.landingstat-item {
+  display: flex;
+  flex-direction: column; /* Stacked on mobile */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; /* Center items */
+}
+
+@media (min-width: 768px) {
+  .landingstat-item {
+    flex-direction: row; /* Row layout on larger screens */
+    justify-content: space-between;
+    width: calc(33.333% - 1rem); /* 3 items per row */
+    text-align: start;
+  }
+}
+@media (max-width: 768px) {
+  .landingstat-item {
+    flex-direction: row; /* Maintain vertical stack */
+    text-align: center; /* Center text */
+  }
+}
+.landingstat-info {
+  flex: 1;
+  text-align: start;
+}
+
+.landingstat-info h3 {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjusted for mobile */
+}
+
+@media (min-width: 768px) {
+  .landingstat-info h3 {
+    font-size: 2rem; /* Larger font size for larger screens */
+  }
+}
+
+.landingstat-info p {
+  overflow-wrap: break-word; /* Break long words if necessary */
+  word-wrap: break-word; /* Legacy property, still widely supported */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.landingstat-icon {
+  font-size: 1rem; /* Adjusted for consistency */
+  color: gray;
+  margin-left: 1rem;
+}
+
+/* Landing image container styling */
+.landingimage-container {
+  width: 100%;
+  padding: 2rem 0; /* Adjusted for mobile */
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .landingimage-container {
+    padding: 4rem 0; /* Restore padding for larger screens */
+  }
+}
+
+.landingimage-container img {
+  border-top-left-radius: 5.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 3.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Home custom image styling */
+.homecustom-image {
+  border-radius: 2.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .homecustom-image {
+    padding: 1.5rem;
+    width: 66.6667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .homecustom-image {
+    padding: 2rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homecustom-image {
+    padding: 2rem;
+    width: 50rem;
+  }
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--btn-primary);
+  border: 1px solid var(--btn-primary);
+  color: #ffffff;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-primary {
+    display: block;
+  }
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+/* Keyframes for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for continuous bouncing */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with fully transparent */
+    transform: translateY(-100px); /* Start above the container */
+  }
+  50% {
+    opacity: 1; /* Fully visible at the middle of the animation */
+    transform: translateY(0); /* Centered in the container */
+  }
+  100% {
+    opacity: 0; /* Fully transparent */
+    transform: translateY(100px); /* Move below the container */
+  }
+}
+
+/* Keyframes for continuous up and down movement */
+@keyframes upDown {
+  0% {
+    transform: translateY(100px); /* Start at the top */
+  }
+  50% {
+    transform: translateY(-100px); /* Move to the bottom */
+  } 
+}
+
+/* Container styles */
+.enterprisecustom-element-container {
+  position: absolute;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing parts of the inner element */
+}
+
+/* Outer element styles */
+.enterprisecustom-element {
+  width: 1rem; /* Equivalent to w-4 in Tailwind CSS */
+  padding: 0.625rem 0; /* Equivalent to py-2.5 in Tailwind CSS */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white; /* Equivalent to border-2 border-white in Tailwind CSS */
+  border-radius: 9999px; /* Equivalent to rounded-full in Tailwind CSS */
+}
+
+/* Inner element styles with combined animations */
+.enterprisecustom-inner-element {
+  width: 0.25rem; /* Equivalent to w-1 in Tailwind CSS */
+  height: 0.625rem; /* Equivalent to h-2.5 in Tailwind CSS */
+  background-color: white; /* Equivalent to bg-white in Tailwind CSS */
+  border-radius: 9999px; /* Equivalent to rounded-full in Tailwind CSS */
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out infinite; /* Apply both animations */
+}

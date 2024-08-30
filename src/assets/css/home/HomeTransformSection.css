@@ -1,0 +1,71 @@
+.transform-section {
+    overflow: hidden;
+    background-color: white;
+    padding: 6rem 0;
+    background-color: #1e293b; /* Adjusted for dark mode */
+  }
+  
+  .hometransformcontainer {
+    margin: 0 auto;
+    max-width: 90rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .hometransformcontent-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: start;
+    max-width: 80rem;
+  }
+  
+  .hometransformtext-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .hometransformheading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .hometransformparagraph {
+    font-size: 1.125rem;
+    color: rgba(17, 24, 39, 0.7);
+  }
+  
+  .hometransformbutton {
+    margin-top: 2.5rem;
+  }
+  
+  .hometransformprimarybutton {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .hometransformprimarybutton:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .hometransformarrow-icon {
+    transition: transform 0.3s;
+  }
+  
+  .hometransformprimary-button:hover .arrow-icon {
+    transform: translateX(0.25rem);
+  }
+  
