@@ -5,6 +5,7 @@ import NavBar   from "./helpers/NavBar";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
+import CRMPage from './pages/crm';
 
 const App: React.FC = () => {
     return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
                 <Route path="/" Component={HomePage} />
                 <Route path="/services" Component={Services} />
                 <Route path="/about-us" Component={AboutUs} />
+                <Route path="/crm" Component={CRMPage} />
             </Routes>
         </Router>
 
