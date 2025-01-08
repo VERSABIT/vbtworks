@@ -1,249 +1,301 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  
-  .app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* Header Section */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .header-buttons .btn {
-    margin-left: 1rem;
-  }
-  
-  /* Hero Section */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+}
+
+.header-buttons .btn {
+  margin: 0.5rem 0; /* Adjust margin for vertical spacing */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #e9f5ff, #fdf9ff);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.hero-buttons .btn {
+  margin: 0.5rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.testimonials h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.review {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.review span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 3rem 1rem;
+  background-color: #e9f5ff;
+  text-align: center;
+  width: 100%;
+}
+
+.benefits h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.benefits ul li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.service {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Download Section */
+.download {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #fdf9ff, #e9f5ff);
+  text-align: center;
+  width: 100%;
+}
+
+.download h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.store-buttons img {
+  max-width: 150px;
+  margin: 0 1rem;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-signin {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-signin:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .hero {
-    text-align: center;
-    padding: 4rem 1rem;
-    background: linear-gradient(135deg, #e9f5ff, #fdf9ff);
-    width: 100%;
+    padding: 2rem 1rem;
   }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555;
-  }
-  
-  .hero-buttons .btn {
-    margin: 0.5rem;
-  }
-  
+
   .hero-image img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 2rem;
+    width: 80%;
   }
-  
-  /* Testimonials Section */
-  .testimonials {
-    padding: 3rem 1rem;
-    background-color: #fff;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .testimonials h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
+
   .reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .review {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    max-width: 300px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .review p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .review span {
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
-  /* Benefits Section */
-  .benefits {
-    padding: 3rem 1rem;
-    background-color: #e9f5ff;
+    display: block;
     text-align: center;
-    width: 100%;
   }
-  
-  .benefits h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-  }
-  
-  .benefits ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-  
-  .benefits ul li {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-  }
-  
-  /* Services Section */
-  .services {
-    padding: 3rem 1rem;
-    background-color: #fff;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .services h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
+
   .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+    grid-template-columns: 1fr;
   }
-  
-  .service {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .service h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Download Section */
-  .download {
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #fdf9ff, #e9f5ff);
-    text-align: center;
-    width: 100%;
-  }
-  
-  .download h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  .store-buttons img {
-    max-width: 150px;
-    margin: 0 1rem;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 2rem;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .footer p {
-    margin-bottom: 1rem;
-  }
-  
-  .footer .social-icons a {
-    color: #fff;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  /* Buttons */
-  .btn {
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .btn-secondary {
-    background-color: #6c757d;
-    color: #fff;
-  }
-  
-  .btn-signin {
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #5a6268;
-  }
-  
-  .btn-signin:hover {
-    background-color: #f8f9fa;
-  }
-  
+}
+
+/* Styling Enhancements */
+.hero {
+  background: linear-gradient(135deg, #e9f5ff, #fdf9ff);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+  border: 1px solid #ddd;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

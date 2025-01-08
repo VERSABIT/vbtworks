@@ -1,7 +1,8 @@
 import React from "react";
 import "../assets/css/crm.css";
 
-const App = () => {
+const CrmSection: React.FC = () => {
+
   return (
     <div className="app">
       {/* Header Section */}
@@ -106,4 +107,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default CrmSection;
