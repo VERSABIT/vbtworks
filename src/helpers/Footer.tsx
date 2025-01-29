@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="text-center text-slate-400" style={{ color: "#ffffff"}}>
               <div className="_editable_kt7nh_1 undefined">
-                <span>© Versabit 2024. All rights reserved.</span>
+                <span>© Versabit {new Date().getFullYear()}. All rights reserved.</span>
               </div>
             </div>
           </div>
