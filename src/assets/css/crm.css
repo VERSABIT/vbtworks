@@ -1,7 +1,8 @@
+/* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f7f9;
   color: #333;
 }
 
@@ -19,7 +20,7 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   width: 100%;
   position: sticky;
   top: 0;
@@ -29,12 +30,12 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #007bff;
 }
 
 .nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .nav a {
@@ -45,21 +46,43 @@ body {
 
 .header-buttons {
   display: flex;
-  flex-direction: row; 
-  align-items: center; 
+  gap: 1rem;
 }
 
 .header-buttons .btn {
-  margin: 0.5rem 0; /* Adjust margin for vertical spacing */
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.btn-signin {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-signin:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(135deg, #e9f5ff, #fdf9ff);
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffffff, #e9f5ff);
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
@@ -74,8 +97,15 @@ body {
   color: #555;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .hero-buttons .btn {
-  margin: 0.5rem;
+  padding: 0.8rem;
+  font-size: 1rem;
 }
 
 .hero-image img {
@@ -86,7 +116,7 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   background-color: #fff;
   text-align: center;
   width: 100%;
@@ -109,7 +139,7 @@ body {
   padding: 1.5rem;
   border-radius: 8px;
   max-width: 300px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
 }
 
@@ -126,7 +156,7 @@ body {
 
 /* Benefits Section */
 .benefits {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   background-color: #e9f5ff;
   text-align: center;
   width: 100%;
@@ -150,7 +180,7 @@ body {
 
 /* Services Section */
 .services {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   background-color: #fff;
   text-align: center;
   width: 100%;
@@ -172,7 +202,7 @@ body {
   background-color: #f9f9f9;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -183,8 +213,8 @@ body {
 
 /* Download Section */
 .download {
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #fdf9ff, #e9f5ff);
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #ffffff, #e9f5ff);
   text-align: center;
   width: 100%;
 }
@@ -202,7 +232,7 @@ body {
 /* Footer */
 .footer {
   padding: 2rem;
-  background-color: #333;
+  background-color: #007bff;
   color: #fff;
   text-align: center;
   width: 100%;
@@ -219,45 +249,19 @@ body {
   font-size: 1.2rem;
 }
 
-/* Buttons */
-.btn {
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-  color: #fff;
-}
-
-.btn-signin {
-  background-color: transparent;
-  color: #333;
-  border: 1px solid #333;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.btn-secondary:hover {
-  background-color: #5a6268;
-}
-
-.btn-signin:hover {
-  background-color: #f8f9fa;
-}
-
 /* Responsiveness */
 @media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .hero {
     padding: 2rem 1rem;
   }
@@ -267,35 +271,11 @@ body {
   }
 
   .reviews {
-    display: block;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .service-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* Styling Enhancements */
-.hero {
-  background: linear-gradient(135deg, #e9f5ff, #fdf9ff);
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.review {
-  border: 1px solid #ddd;
-}
-
-/* Accessibility */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }

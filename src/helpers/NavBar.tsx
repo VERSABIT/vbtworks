@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 <Link to="/" className="hover:text-blue-500">Home</Link>
                 <Link to="/services" className="hover:text-blue-500">Services</Link>
                 <Link to="/about-us" className="hover:text-blue-500">About Us</Link>
-                <Link to="/crm" className="hover:text-blue-500" onClick={toggleMenu}>CRM</Link>
+                {/* <Link to="/crm" className="hover:text-blue-500" onClick={toggleMenu}>CRM</Link> */}
 
             </nav>
             {isOpen ? " " :

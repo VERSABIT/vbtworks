@@ -1,5 +1,5 @@
 import React from "react"; 
-import CRM from '../components/crm'
+import CRM from '../components/Crm'
 
 const CRMPage: React.FC = () => {
   return (
