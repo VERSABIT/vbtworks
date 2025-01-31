@@ -65,7 +65,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className="exploreservice-card">
       <img
         src={imageSrc}
-        alt={`${title} image`}
+        alt=""
         className="exploreservice-image"
       />
       <div className="exploreservice-content">

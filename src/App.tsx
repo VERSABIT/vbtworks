@@ -5,7 +5,7 @@ import NavBar   from "./helpers/NavBar";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
-import CRMPage from './pages/crm';
+// import CRMPage from './pages/crm';
 
 const App: React.FC = () => {
     return (
