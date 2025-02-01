@@ -6,13 +6,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ButtonHelper from "../../helpers/ButtonHelper";
 import empoweringDivImg from "../../assets/empoweringDivImg.png";
-import "../../assets/css/index.css"
-import "../../assets/css/Animation.css"; 
+import "../../assets/css/index.css";
+import "../../assets/css/Animation.css";
 import { Link } from "react-router-dom";
 
 const MainSection = () => {
- 
-
   return (
     <div className="main-section animate-fadeInMoveUp">
       <div className="landinggrid-container">
@@ -27,17 +25,25 @@ const MainSection = () => {
               software.
             </p>
             <div className="landingbuttons-container">
-              <Link to="/services" className="landingbtn-primary" style={{ color: "#ffffff"}}>
+              <Link
+                to="/services"
+                className="landingbtn-primary"
+                style={{ color: "#ffffff" }}
+              >
                 <ButtonHelper
                   text={"Discover Our Solutions"}
-                  className={"landingbtn-primary"} 
+                  className={"landingbtn-primary"}
                 />
               </Link>
-              <Link to="/services" className="landingbtn-secondary" style={{ color: "#0F172A"}}>
+              <Link
+                to="/services"
+                className="landingbtn-secondary"
+                style={{ color: "#0F172A" }}
+              >
                 <ButtonHelper
                   text={"Learn More"}
                   icon={faArrowRight}
-                  className={"landingbtn-secondary"} 
+                  className={"landingbtn-secondary"}
                 />
               </Link>
             </div>
@@ -47,14 +53,20 @@ const MainSection = () => {
                   <h3>500+</h3>
                   <p>Satisfied Clients</p>
                 </div>
-                <FontAwesomeIcon icon={faChevronRight} className="landingstat-icon" />
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="landingstat-icon"
+                />
               </div>
               <div className="landingstat-item">
                 <div className="landingstat-info">
                   <h3>1M+</h3>
                   <p>Transactions Processed</p>
                 </div>
-                <FontAwesomeIcon icon={faChevronRight} className="landingstat-icon" />
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="landingstat-icon"
+                />
               </div>
               <div className="landingstat-item">
                 <div className="landingstat-info">

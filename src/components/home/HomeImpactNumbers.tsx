@@ -24,12 +24,17 @@ const HomeImpactNumbers = () => {
             </div>
           </div>
           <div className="container-customnumbers highlight-card ">
-            <p className="text-content" style={{ color: "#ffffff"}}>$1.2B</p>
+            <p className="text-content" style={{ color: "#ffffff" }}>
+              $1.2B
+            </p>
             <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
-              <p className="homeimpact-stat-title" style={{ color: "#ffffff"}}>
+              <p className="homeimpact-stat-title" style={{ color: "#ffffff" }}>
                 Revenue Boosted
               </p>
-              <p className="homeimpact-stat-text" style={{ color: "#FFFFFFB3"}}>
+              <p
+                className="homeimpact-stat-text"
+                style={{ color: "#FFFFFFB3" }}
+              >
                 Driving significant revenue growth for our clients.
               </p>
             </div>

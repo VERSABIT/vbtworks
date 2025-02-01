@@ -9,8 +9,7 @@ import {
   faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
 import "../../assets/css/FeaturesSection.css";
-import "../../assets/css/Animation.css"
-
+import "../../assets/css/Animation.css";
 
 const features = [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/css/Animation.css";
-import "../../assets/css/home/HomeExpertSection.css"
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import "../../assets/css/home/HomeExpertSection.css";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ExpertSection = () => {
   return (
@@ -90,7 +90,7 @@ const ExpertSection = () => {
                   </a>
                 </li>
               </ul>
-            </div> 
+            </div>
           </li>
         </ul>
       </div>

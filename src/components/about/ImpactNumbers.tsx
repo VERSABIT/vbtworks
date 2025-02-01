@@ -1,7 +1,11 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faDiagramProject, faAward } from '@fortawesome/free-solid-svg-icons';
-import '../../assets/css/ImpactSection.css';  
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUsers,
+  faDiagramProject,
+  faAward,
+} from "@fortawesome/free-solid-svg-icons";
+import "../../assets/css/ImpactSection.css";
 import "../../assets/css/Animation.css";
 
 const ImpactSection = () => {
@@ -10,7 +14,9 @@ const ImpactSection = () => {
       <div className="impactcontainer">
         <div className="impacttext-center">
           <h1 className="impacttitle-primary">Our Impact</h1>
-          <p className="impactdesc">Versabit's solutions have transformed enterprises worldwide.</p>
+          <p className="impactdesc">
+            Versabit's solutions have transformed enterprises worldwide.
+          </p>
         </div>
         <div className="impactgrid">
           <div className="impactcard">
@@ -25,7 +31,10 @@ const ImpactSection = () => {
           <div className="impactcard">
             <div className="impactcard-content">
               <div className="impacticon">
-                <FontAwesomeIcon icon={faDiagramProject} className="fa-diagram-project" />
+                <FontAwesomeIcon
+                  icon={faDiagramProject}
+                  className="fa-diagram-project"
+                />
               </div>
               <p className="impactstat">300+</p>
               <p className="impactlabel">Projects Completed</p>

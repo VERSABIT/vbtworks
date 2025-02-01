@@ -12,12 +12,12 @@ import LandingSection from "./home/LandingSection";
 const MainSection: React.FC = () => {
   return (
     <div>
-      <LandingSection/>
-      <HomeSolutions/>
-      <ExpertSection/>
-      <HomeImpactNumbers/>
-      <HomeTransformSection/>
-      <HomeContactSection/>
+      <LandingSection />
+      <HomeSolutions />
+      <ExpertSection />
+      <HomeImpactNumbers />
+      <HomeTransformSection />
+      <HomeContactSection />
       <Footer />
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import "../assets/css/FAQSection.css";
-import "../assets/css/Animation.css"
-
+import "../assets/css/Animation.css";
 
 const FAQSection = () => {
   return (

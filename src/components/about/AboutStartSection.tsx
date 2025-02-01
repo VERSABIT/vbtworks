@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/css/AboutStartSection.css";
-import "../../assets/css/Animation.css"
+import "../../assets/css/Animation.css";
 import {
   faArrowRight,
   faUserShield,

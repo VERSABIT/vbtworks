@@ -10,13 +10,13 @@ import Footer from "../helpers/Footer";
 const Services: React.FC = () => {
   return (
     <div id="root">
-        <EnterpriseSection/>
-        <OurExpertiseServiceSection/> 
-        <ExploreServices/>
-        <TransformBusiness/>
-        <ContactSection/>
-        <FAQSection/>
-        <Footer/>
+      <EnterpriseSection />
+      <OurExpertiseServiceSection />
+      <ExploreServices />
+      <TransformBusiness />
+      <ContactSection />
+      <FAQSection />
+      <Footer />
     </div>
   );
 };

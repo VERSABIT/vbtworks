@@ -1,9 +1,8 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import '../assets/css/TransformBusiness.css';
-import "../assets/css/Animation.css"
-
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "../assets/css/TransformBusiness.css";
+import "../assets/css/Animation.css";
 
 const TransformBusiness: React.FC = () => {
   return (
@@ -11,9 +10,12 @@ const TransformBusiness: React.FC = () => {
       <div className="servicetransform-container">
         <div className="servicetransform-content">
           <div className="servicetransform-text">
-            <h2 className="servicetransform-title">Ready to Transform Your Business?</h2>
+            <h2 className="servicetransform-title">
+              Ready to Transform Your Business?
+            </h2>
             <p className="servicetransform-description">
-              Contact Versabit today and discover how our solutions can help your enterprise thrive.
+              Contact Versabit today and discover how our solutions can help
+              your enterprise thrive.
             </p>
           </div>
           <div className="servicetransform-features">
@@ -23,7 +25,10 @@ const TransformBusiness: React.FC = () => {
             <Feature icon={faCheck} text="Ongoing Support" />
           </div>
           <button className="servicetransform-button">
-            <FontAwesomeIcon icon={faEnvelope} className="servicetransform-button-icon" />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="servicetransform-button-icon"
+            />
             Get in Touch
           </button>
         </div>
