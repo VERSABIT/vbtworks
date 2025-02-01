@@ -14,13 +14,19 @@ const [openAccordion, setOpenAccordion] = useState<number | null>(null);;
 const [openAccordion3, setOpenAccordion3] = useState<number | null>(null);;
 
 const toggleAccordion = (id: number) => {
-  setOpenAccordion(openAccordion === id ? null : id);
-};
+  if (openAccordion === id) {
+    setOpenAccordion(null);  // Close this accordion
+  } else {
+    setOpenAccordion(id);  // Open this accordion
+  }
 
-const toggleAccordion3 = (id: number) => {
-  setOpenAccordion3(openAccordion3 === id ? null : id);
-};
+  if (openAccordion3 === id) {
+    setOpenAccordion3(null);  // Close this accordion
+  } else {
+    setOpenAccordion3(id);  // Open this accordion
+  }
 
+};
 
   const counters = [
     {
@@ -72,6 +78,8 @@ const toggleAccordion3 = (id: number) => {
         "Yes, we offer a 14-day money-back guarantee for all new purchases. If you're not satisfied with your product, you can request a refund within this period. Please review our refund policy for more details.",
     },
   ];
+  const [linkAvailable] = useState(false);  // Set it to true or false based on your requirement
+
 
   return (
     <div>
@@ -100,7 +108,7 @@ const toggleAccordion3 = (id: number) => {
                   We provide all customer management services with one software.
                 </p>
                 <a
-                  href="#features"
+                  href={linkAvailable ? "#features" : "#"}
                   className="theme-btn wow fadeInUp"
                   data-wow-delay=".8s"
                   data-wow-duration="1.3s"
@@ -375,7 +383,9 @@ const toggleAccordion3 = (id: number) => {
       <Footer />
 
       {/* Scroll Top */}
-      <a href="#" className="scroll-top">
+      <a 
+      href={linkAvailable ? "#scroll" : "#"}
+      className="scroll-top">
         <i className="lni lni-chevron-up"></i>
       </a>
     </div>
