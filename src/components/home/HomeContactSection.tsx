@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhone, FaComments, FaArrowRight } from "react-icons/fa";
 import "../../assets/css/home/HomeContactSection.css";
-import "../../assets/css/Animation.css"
+import "../../assets/css/Animation.css";
 
 const HomeContactSection = () => {
   return (

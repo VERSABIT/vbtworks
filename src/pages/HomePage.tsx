@@ -1,12 +1,12 @@
-import React from 'react';
-import MainSection from '../components/MainSection';
+import React from "react";
+import MainSection from "../components/MainSection";
 
 const HomePage: React.FC = () => {
-    return (
-        <div>
-            <MainSection />
-        </div>
-    );
+  return (
+    <div>
+      <MainSection />
+    </div>
+  );
 };
 
 export default HomePage;

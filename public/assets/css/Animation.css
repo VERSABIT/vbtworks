@@ -1,0 +1,163 @@
+/* Define the keyframes */
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation */
+.animate-fadeInMoveUp {
+  animation: fadeInMoveUp 2s ease-out forwards;
+}
+
+/* Example usage in an element */
+.example-element {
+  /* Any other styles you need */
+  display: inline-block; /* Make sure it's an inline-block or block element */
+  opacity: 0; /* Start hidden */
+}
+/* Small devices (mobile phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  button {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .landinggrid-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 10px;
+  }
+  .landingbuttons-container { 
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .landingbuttons-container a {
+    flex: 1;
+    display: flex;
+  }
+
+  .landingbuttons-container button {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+/* Medium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .landingtext-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .landingtext-container h2 {
+    flex: 1;
+    font-size: 3rem; /* Adjust font size for larger screens */
+  }
+
+  .landingtext-container p {
+    flex: 2;
+    font-size: 1.25rem; /* Adjust font size for larger screens */
+  }
+
+  .landingbuttons-container {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    border-radius: 0.5rem; /* rounded-lg */
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .expertisegrid {
+    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
+  }
+  
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 1.125rem;
+    padding: 12px 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .text-link {
+    color: #f9fafb; /* Keep text-slate-50 or adjust as needed for dark mode */
+  }
+
+  .text-link:hover {
+    color: #2e9aff; /* equivalent to text-sky-400 in dark mode */
+  }
+}
+/* Dark mode focus styles */
+@media (prefers-color-scheme: dark) {
+  .text-link:focus {
+    color: #2e9aff; /* equivalent to text-sky-500 in dark mode */
+  }
+}

@@ -1,6 +1,6 @@
-import leonard from '../assets/leonard.jpeg';
-import aubrey from '../assets/aubrey.jpeg';
-import tanya from '../assets/tanya.jpeg';
+import leonard from "../assets/leonard.jpeg";
+import aubrey from "../assets/aubrey.jpeg";
+import tanya from "../assets/tanya.jpeg";
 
 export const teamMembers = [
   {

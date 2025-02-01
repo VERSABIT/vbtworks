@@ -8,8 +8,7 @@ import {
   faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import "../assets/css/OurExpertiseSection.css";
-import "../assets/css/Animation.css"
-
+import "../assets/css/Animation.css";
 
 const OurExpertiseServiceSection = () => {
   return (
@@ -24,7 +23,10 @@ const OurExpertiseServiceSection = () => {
             </p>
             <div className="mt-8">
               <button className="expertisebtn-primary">
-                <FontAwesomeIcon icon={faArrowRight} className="expertiseicon" />
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="expertiseicon"
+                />
                 Explore Services
               </button>
             </div>
@@ -34,8 +36,13 @@ const OurExpertiseServiceSection = () => {
               <div className="expertisespace-y-5">
                 <div className="expertisecard">
                   <div className="expertisepx-4 py-5 sm:p-6">
-                    <FontAwesomeIcon icon={faLightbulb} className="expertiseicon dark" />
-                    <h3 className="expertisetitle-secondary dark">IT Advisory</h3>
+                    <FontAwesomeIcon
+                      icon={faLightbulb}
+                      className="expertiseicon dark"
+                    />
+                    <h3 className="expertisetitle-secondary dark">
+                      IT Advisory
+                    </h3>
                     <p className="expertisedesc dark">
                       Expert guidance to align your IT strategy with your
                       business goals.
@@ -46,8 +53,13 @@ const OurExpertiseServiceSection = () => {
               <div className="expertisespace-y-5">
                 <div className="expertisecard">
                   <div className="expertisepx-4 py-5 sm:p-6">
-                    <FontAwesomeIcon icon={faClock} className="expertiseicon dark" />
-                    <h3 className="expertisetitle-secondary dark">On-demand IT</h3>
+                    <FontAwesomeIcon
+                      icon={faClock}
+                      className="expertiseicon dark"
+                    />
+                    <h3 className="expertisetitle-secondary dark">
+                      On-demand IT
+                    </h3>
                     <p className="expertisedesc dark">
                       {" "}
                       Flexible IT support tailored to your specific needs.{" "}
@@ -58,7 +70,10 @@ const OurExpertiseServiceSection = () => {
               <div className="expertisespace-y-5">
                 <div className="expertisecard">
                   <div className="px-4 py-5 sm:p-6">
-                    <FontAwesomeIcon icon={faServer} className="expertiseicon dark" />
+                    <FontAwesomeIcon
+                      icon={faServer}
+                      className="expertiseicon dark"
+                    />
                     <h3 className="expertisetitle-secondary dark">
                       Infrastructure Services{" "}
                     </h3>
@@ -71,7 +86,10 @@ const OurExpertiseServiceSection = () => {
               <div className="expertisespace-y-5">
                 <div className="expertisecard">
                   <div className="px-4 py-5 sm:p-6">
-                    <FontAwesomeIcon icon={faCode} className="expertiseicon dark" />
+                    <FontAwesomeIcon
+                      icon={faCode}
+                      className="expertiseicon dark"
+                    />
                     <h3 className="expertisetitle-secondary dark">
                       Software Development
                     </h3>

@@ -14,6 +14,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.1",
@@ -25,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +50,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
+    "prettier": "^3.4.2",
     "tailwindcss": "^3.4.4"
   }
 }

@@ -1,11 +1,8 @@
 import React from "react";
 import "../assets/css/ExploreServices.css"; // Import the CSS file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight, 
-} from "@fortawesome/free-solid-svg-icons";
-import "../assets/css/Animation.css"
-
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import "../assets/css/Animation.css";
 
 const Exploreservices = () => {
   return (
@@ -63,11 +60,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div className="exploreservice-card">
-      <img
-        src={imageSrc}
-        alt=""
-        className="exploreservice-image"
-      />
+      <img src={imageSrc} alt="" className="exploreservice-image" />
       <div className="exploreservice-content">
         <h3 className="exploreservice-title">{title}</h3>
         <p className="exploreservice-description">{description}</p>

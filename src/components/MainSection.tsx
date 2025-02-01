@@ -10,18 +10,14 @@ import HomeSolutions from "./home/HomeSolutions";
 import LandingSection from "./home/LandingSection";
 
 const MainSection: React.FC = () => {
-  console.log(window.location.pathname);
-
- 
-
   return (
     <div>
-      <LandingSection/>
-      <HomeSolutions/>
-      <ExpertSection/>
-      <HomeImpactNumbers/>
-      <HomeTransformSection/>
-      <HomeContactSection/>
+      <LandingSection />
+      <HomeSolutions />
+      <ExpertSection />
+      <HomeImpactNumbers />
+      <HomeTransformSection />
+      <HomeContactSection />
       <Footer />
     </div>
   );
