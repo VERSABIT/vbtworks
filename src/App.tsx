@@ -5,7 +5,7 @@ import NavBar   from "./helpers/NavBar";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
 import HomePage from "./pages/HomePage";
-// import CRMPage from './pages/crm';
+import CRMPage from './pages/crm';
 
 const App: React.FC = () => {
     return (
@@ -14,7 +14,7 @@ const App: React.FC = () => {
                <Route path="/" element={<> <NavBar /> <HomePage /> </>} /> 
                <Route path="/services" element={<> <NavBar /> <Services /> </>} /> 
                <Route path="/about-us" element={<> <NavBar /> <AboutUs /> </>} /> 
-               {/* <Route path="/crm" element={<CRMPage />} />  */}
+               <Route path="/crm" element={<> <NavBar /> <CRMPage /> </>} /> 
         </Routes>
         </Router>
 

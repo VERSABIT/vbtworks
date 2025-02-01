@@ -28,6 +28,13 @@ const Footer: React.FC = () => {
                 </div>
               </button>
             </li>
+            <li>
+              <button className="text-link">
+                <div className="_editable_jwu41_1 undefined" data-link="link=home&amp;target=_blank&amp;text=Home">
+                    <Link to="/crm" className="hover:text-blue-500">CRM</Link>
+                </div>
+              </button>
+            </li>
           </ul>
           <div className="flex flex-col items-center gap-8 md:justify-between md:flex-row">
             <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
